@@ -10,6 +10,25 @@ import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.orhanobut.logger.PrettyFormatStrategy;
 
+
+/**
+ *  _       ___  ______  _____
+ * | |     / _ \ | ___ \/  ___|
+ * | |    / /_\ \| |_/ /\ `--.
+ * | |    |  _  || ___ \ `--. \
+ * | |____| | | || |_/ //\__/ /
+ * \_____/\_| |_/\____/ \____/
+ *
+ * Все лабораторные работы, удобно упакованные в одно
+ * приложение. Всё потестированно и работает на Android 8.1
+ *
+ * @author Igorek536
+ * @version 1.0
+ */
+
+
+
+
 @SuppressWarnings("FieldCanBeLocal")
 public class MainActivity extends AppCompatActivity {
 
@@ -53,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
         final Intent intentLab2 = new Intent(this, Lab2Activity.class);
         final Intent intentLab3 = new Intent(this, Lab3Activity.class);
         final Intent intentLab4 = new Intent(this, Lab4Activity.class);
+        final Intent intentLab5 = new Intent(this, Lab5Activity.class);
+        final Intent intentLab6 = new Intent(this, Lab6Activity.class);
 
         lab2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,14 +99,14 @@ public class MainActivity extends AppCompatActivity {
         lab5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(intentLab5);
             }
         });
 
         lab6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(intentLab6);
             }
         });
     }

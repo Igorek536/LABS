@@ -3,6 +3,8 @@
     package="com.gangster.labs">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
 
     <application
         android:allowBackup="true"
@@ -26,7 +28,8 @@
         <activity android:name=".lab2.Lab2Present" />
         <activity android:name=".Lab3Activity" />
         <activity android:name=".Lab4Activity" />
-        <activity android:name=".Lab5Activity"></activity>
+        <activity android:name=".Lab5Activity" />
+        <activity android:name=".Lab6Activity"></activity>
     </application>
 
 </manifest>
